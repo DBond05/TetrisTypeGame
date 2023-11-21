@@ -1,0 +1,119 @@
+*{
+	
+	box-sizing: border-box;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+  background-image: url("./images/defaultbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+#main-content{
+  margin: 0;
+	padding: 0;
+  background-color: rgb(0,255,255,0.5);
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow:1px 0 5px 1px;
+}
+
+#gameBoard{
+   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border:8px solid #111212;
+ 
+
+}
+#tetris{
+	background-color: whitesmoke;
+	height: 85vh;
+}
+
+#controls{
+  display: flex;
+  flex-wrap:wrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+ }
+ #settings{
+  display:flex;
+  align-content: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  margin: 20px;
+  
+ }
+ #set-btns{
+  display:flex;
+  align-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  
+  
+ }
+button{
+  border-radius:15px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover{  
+  background-color: #111212;
+  color: #fff;
+  }
+button:active{
+  background-color: #111212;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);;
+  transform: translateY(4px);
+}
+
+.btn-group button{
+  float: left;
+  padding: 15px;
+  margin: 15px;
+}
+#btn-pause{
+  margin-top: 50px;
+}
+#imageA{
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+}
+#imageB{
+  margin-top: 50px;
+  max-width: 90;
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
