@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=" x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tetris</title>
+    <link rel="stylesheet" href="./tetris.css">
+    <link rel="stylesheet" id="theme-selector" href="">
+</head>
+
+<body>
+
+    <div id="main-content">
+        <div id="settings">
+            <div id="set-btns">
+                <label for="player" class="player"> Who is playing? </label>
+                <select name="player" id="player" class="selectors" onchange="setTheme(event)">
+                    <option data-theme="default" class="theme" value="default"></option>
+                    <option value="mom">Janye </option>
+                    <option value="steve">Steve </option>
+                    <option value="james">James</option>
+                    <option value="angie">Angie</option>
+                    <option value="toni">Toni </option>
+                    <option value="chris">Chris</option>
+                    <option value="phounge">Phounge</option>
+                    <option value="casey">Casey </option>
+                    <option value="crystal">Crystal </option>
+                    <option value="z">Z</option>
+                    <option value="rosie">Rosie </option>
+                    <option value="beth">Beth </option>
+                    <option value="emily">Emily </option>
+                    <option value="catherine">Catherine</option>
+                    <option value="eddie">Eddie</option>
+                    <option value="lori">Lori </option>
+                    <option value="allizabeth">Alizzabeth </option>
+                    <option value="aj">AJ </option>
+                    <option value="abby">Abby</option>
+                    <option value="avery"> Avery</option>
+                    <option value="lilly">Lilly </option>
+                    <option value="alli"> Alli</option>
+                    <option value="alivia">Alivia </option>
+                    <option value="santa">Santa </option>
+                    
+
+                </select>
+                <button id="btn-pause" onclick="pause()">Pause</button>
+            </div>
+            <div id="imageA">
+                <img id="imgA" style=" max-height:200px;
+                max-width: 200px;" src="./images/basketOfYarnimg.png">
+            </div>
+        </div>
+
+        <div id="gameBoard">
+            <h2> Score: 0</h2>
+            <canvas id="tetris" height="600" width="300"> </canvas>
+        </div>
+
+        <div id="controls">
+            <button id="btn-rotate" onclick="rotate()"> Rotate </button>
+            <div class="btn-group">
+                <button id="btn-lt" onclick="moveLeft()"> Left </button>
+                <button id="btn-rt" onclick="moveRight()"> Right </button>
+            </div>
+            <button id="btn-down" onclick="moveDown()"> Down </button>
+            <div id="imageB">
+                <img id="imgB" style=" max-height:200px;
+                max-width: 200px;"  src="./images/catimg.png">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="./profiles.js"></script>
+<script src= "./shapes.js"></script>
+<script src="./tetris.js"></script>
+</html>

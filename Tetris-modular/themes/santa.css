@@ -1,0 +1,33 @@
+:root{
+    --gradient:  repeating-linear-gradient(45deg, red, red 10px, white 10px,white 20px)30;
+    --gradient2: repeating-linear-gradient(45deg, white, white 15px,red 15px,red 30px);
+    --gamebg-color: rgba(190, 51, 63, 0.493);
+    --text-color: green;
+    --button-text-color: white;
+    --gbborder-color: green;
+    --button-color: green ;
+    --button-hover-color:  white;
+    
+}
+
+
+#main-content{
+    background-color: var(--gamebg-color);
+}
+
+#gameBoard{
+    
+    border: 15px solid;
+    border-image: var(--gradient);
+}
+
+button{
+	
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+}
+button:hover{  
+	 background-image: var(--gradient2);
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+    }
