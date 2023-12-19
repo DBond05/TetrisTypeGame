@@ -1,12 +1,14 @@
 :root{
     
-    --gamebg-color: rgba(228, 174, 198, 0.493);
-    --text-color: white;
-    --button-text-color: black;
+    --gamebg-color: rgba(111, 95, 158, 0.493);
+    --text-color: rgb(66, 17, 71);
+    --button-text-color:rgb(66, 17, 71);
     --gbborder-color: rgb(66, 17, 71);
     --button-color: rgb(223, 205, 226) ;
     --button-hover-color:  rgb(66, 17, 71);
-    
+    --gradient:conic-gradient( rgb(223, 205, 226),rgb(238, 165,185),  rgb(223, 205, 226)) 1; 
+    --gradient2: linear-gradient(to right,rgb(223, 205, 226),rgb(238, 165,185),rgb(223, 205, 226));
+    --gradient3: linear-gradient(to left,rgb(238, 165,185),rgb(223, 205, 226), rgb(238, 165,185));
 }
 
 
@@ -15,14 +17,18 @@
 }
 
 #gameBoard{
-    border:8px solid var(--gbborder-color) ;
+    border-style: solid;
+    border-width: 8px;
+    border-image: var(--gradient);
 }
 
 button{
     background-color: var(--button-color);
     color: var(--button-text-color);
+    background-image: var(--gradient3);
 }
 button:hover{  
+    background-image: var(--gradient2);
     background-color: var(--button-hover-color);
     color: var(--text-color);
     }

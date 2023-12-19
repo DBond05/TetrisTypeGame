@@ -89,7 +89,7 @@ button:hover{
   }
 button:active{
   background-color: #111212;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
   transform: translateY(4px);
 }
 
@@ -104,14 +104,15 @@ button:active{
 #imageA{
   margin-top: 50px;
   position: absolute;
-  bottom: 0; 
-  right: 0;
+  bottom: 0%; 
+  right: 0%;
 }
 #imageB{
-  margin-top: 50px;
-  max-width: 90;
+  margin-top: 20px;
+  max-width: 200px;
+  max-height: 200px;
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
 }
 
 

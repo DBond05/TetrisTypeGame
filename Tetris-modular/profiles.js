@@ -18,8 +18,11 @@ var ICONS = [
     "./images/trollicon.jpg",          //14
     "./images/santaicon.jpg",          //15
     "./images/angicon.jpg",            //16 
-    "./images/wowicon.jpg"             //17
-
+    "./images/wowicon.jpg",            //17
+    "./images/roseicon.jpg",           //18
+    "./images/oceanpearlicon.jpg",     //19 
+    "./images/mcicon.jpg",             //20
+    "./images/LOLicon.jpg"             //21
 ];
 
 // FUNCTION TO CHANGE IMAGES IN THEMES
@@ -27,7 +30,7 @@ var ICONS = [
 function setTheme(e) {
     let player = e.target.value;
 
-    console.log(player);
+    //console.log(player);
     switch (player) {
         case "mom":
             document.getElementById('theme-selector').href = './themes/mom.css';
@@ -99,12 +102,12 @@ function setTheme(e) {
             document.getElementById('imgA').src = "./images/reddragon.png";
             icon.src = ICONS[6];
             break;
-        case "rosie": //not good-todo fix
+        case "rosie": 
             document.getElementById('theme-selector').href = './themes/rosie.css';
             document.body.style.backgroundImage = "url('./images/blackdragoncave.jpg')";
             document.getElementById('imgB').src = "./images/blckknight.png";
             document.getElementById('imgA').src = "./images/femaleknight.png";
-            icon.src = ICONS[6];
+            icon.src = ICONS[18];
             break;
         case "beth":
             document.getElementById('theme-selector').href = './themes/beth.css';
@@ -121,18 +124,18 @@ function setTheme(e) {
             icon.src = ICONS[10];
             break;
         case "catherine":
-            document.getElementById('theme-selector').href = './themes/toni.css';
-            document.body.style.backgroundImage = "url('./images/tealOrangeFlowerbg2.jpg')";
-            document.getElementById('imgA').src = "./images/peacockimg.png";
-            document.getElementById('imgB').src = "./images/peacockimg2.png";
-            icon.src = ICONS[3];
+            document.getElementById('theme-selector').href = './themes/catherine.css';
+            document.body.style.backgroundImage = "url('./images/oceanbg.jpg')";
+            document.getElementById('imgA').src = "./images/oceanmermaid.png";
+            document.getElementById('imgB').src = "./images/oceandolphin.png";
+            icon.src = ICONS[19];
             break;
         case "eddie":
-            document.getElementById('theme-selector').href = './themes/toni.css';
-            document.body.style.backgroundImage = "url('./images/tealOrangeFlowerbg2.jpg')";
-            document.getElementById('imgA').src = "./images/peacockimg.png";
-            document.getElementById('imgB').src = "./images/peacockimg2.png";
-            icon.src = ICONS[3];
+            document.getElementById('theme-selector').href = './themes/eddie.css';
+            document.body.style.backgroundImage = "url('./images/mcbg.jpg')";
+            document.getElementById('imgA').src = "./images/mcmanpigimg.png";
+            document.getElementById('imgB').src = "./images/mczombie.png";
+            icon.src = ICONS[20];
             break;
         case "lori":
             document.getElementById('theme-selector').href = './themes/lori.css';
@@ -149,6 +152,9 @@ function setTheme(e) {
             icon.src = ICONS[11];
             break;
         case "aj":
+            /*AJ I left your profile kinda plain on purpose because I Can't wait
+             to see what amazing things you can do with it. Same for Daddy Z..shhh
+             don't tell him.*/
             document.getElementById('theme-selector').href = './themes/aj.css';
             document.body.style.backgroundImage = "url('./images/robloxbg.jpg')";
             document.getElementById('imgA').src = "./images/robloxchar.png";
@@ -170,11 +176,11 @@ function setTheme(e) {
             icon.src = ICONS[13];
             break;
         case "lilly":
-            document.getElementById('theme-selector').href = './themes/avery.css';
-            document.body.style.backgroundImage = "url('./images/mlpbg.jpg')";
-            document.getElementById('imgA').src = "./images/mlppinkyimg.png";
-            document.getElementById('imgB').src = "./images/mlptwilightimg.png";
-            icon.src = ICONS[14];
+            document.getElementById('theme-selector').href = './themes/lilly.css';
+            document.body.style.backgroundImage = "url('./images/MHAbg.jpg')";
+            document.getElementById('imgA').src = "./images/MHAbakugoimg.png";
+            document.getElementById('imgB').src = "./images/MHAbakugoimgB.png";
+            icon.src = ICONS[4];
             break;
         case "alli":
             document.getElementById('theme-selector').href = './themes/alli.css';
@@ -184,11 +190,11 @@ function setTheme(e) {
             icon.src = ICONS[14];
             break;
         case "alivia":
-            document.getElementById('theme-selector').href = './themes/avery.css';
-            document.body.style.backgroundImage = "url('./images/mlpbg.jpg')";
-            document.getElementById('imgA').src = "./images/mlppinkyimg.png";
-            document.getElementById('imgB').src = "./images/mlptwilightimg.png";
-            icon.src = ICONS[13];
+            document.getElementById('theme-selector').href = './themes/alivia.css';
+            document.body.style.backgroundImage = "url('./images/LOLbg1.jpg')";
+            document.getElementById('imgA').src = "./images/LOLdoll1.png";
+            document.getElementById('imgB').src = "./images/LOLdoll3.png";
+            icon.src = ICONS[21];
             break;
         case "santa":
             document.getElementById('theme-selector').href = './themes/santa.css';
@@ -204,6 +210,9 @@ function setTheme(e) {
             document.getElementById('imgA').src = "./images/basketOfYarnimg.png";
             document.getElementById('imgB').src = "./images/catimg.png";
             icon.src = ICONS[0];
+    }
+    if(paused){
+         renderGrid();
     }
 
 

@@ -1,0 +1,32 @@
+:root{
+	--gradient:  conic-gradient(white, rgb(255, 51, 204),aqua, rgb(255, 51, 204), white) 1;
+    --gradient2: linear-gradient(to right,rgb(255, 51, 204), aqua);
+    --gamebg-color: rgba(255, 102, 255, 0.493);
+    --text-color: white;
+    --button-text-color: white;
+    --gbborder-color: rgb(255, 51, 204);
+    --button-color: rgb(255, 51, 204) ;
+    --button-hover-color:  rgb(119, 0, 179);
+    
+}
+
+
+#main-content{
+    background-color: var(--gamebg-color);
+}
+
+#gameBoard{
+   border-style: solid;
+    border-width: 8px;
+    border-image: var(--gradient);
+}
+
+button{
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+}
+button:hover{ 
+	background-image: var(--gradient2); 
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+    }

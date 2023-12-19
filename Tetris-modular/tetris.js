@@ -110,7 +110,8 @@ function renderGrid() {
 	for (let i = 0; i < grid.length; i++) {
 		for (let j = 0; j < grid[i].length; j++) {
 			ctx.fillStyle = COLORS[grid[i][j]];
-			ctx.fillRect(j, i, 1, 1)
+			ctx.fillRect(j, i, 1, 1);
+			
 		}
 	}
 	renderPiece();
@@ -274,6 +275,7 @@ function collision(x, y, rotatedPiece) {
 	}
 	return false;
 }
+
 
 
 

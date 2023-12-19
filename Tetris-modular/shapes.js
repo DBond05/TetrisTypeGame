@@ -9,7 +9,7 @@
 // then all the shapes are listed in the SHAPES array.
 var SHAPES = [ //an array
 	[ // <-- opening bracket of a nested array
-		[0, 1, 0, 0], //<-- a nested array of numbers
+		[0, 1, 0, 0], //<-- each line is a nested array of numbers
 		[0, 1, 0, 0], // notice that each has an opening '[' & closing ']' and comma.
 		[0, 1, 0, 0],// the ones and zeros draw the shape
 		[0, 1, 0, 0]
@@ -56,7 +56,7 @@ var SHAPES = [ //an array
 ];
 // color of SHAPES
 var COLORS = [
-	"#fff", // white
+	"#fff", // white - do NOT change this one: color for game board.
 	"#0000ff", //blue
 	"#00ff00", // green
 	"#ffff00", // yellow
@@ -68,9 +68,9 @@ var COLORS = [
 /* To change the colors 
 	user the W3C color picker to find the color you want
 	and replace the one you want to change with the #XXXXX that you
-	want. for example #fff is the code for white but if you wanted
+	want. for example #00ff00 is the code for green but if you wanted
 	to replace it with yellow you could use #ffff00 instead. Here
 	is the link to the color picker : https://www.w3schools.com/colors/colors_picker.asp
 	check it out! */
-	
+
 	//be careful to not overwrite the quotes " " or the commas , 
