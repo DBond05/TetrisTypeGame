@@ -2,16 +2,16 @@ Dearest Family,
 Merry Christmas! I love you all.  I hope you like the little game I've made for you. It's a knock off of tetris. It took me about a day to build the game, then about two weeks to hunt down the images and build out your own personal theme.
 
 Getting started:
-Your game is stored on a thumb drive. While the thumbdrive is connected to  your computer, copy and paste the 'Tetris custom' folder somewhere on your computer. ('Documents' or 'My Documents' would be my recomendation). Open the Tetris Custom folder stored on your computer and right click on the 'tetris.html' icon. (its going to have the same icon as your default browser ie.. chrome, internet explorer)  You should see 'send to' in the list of options. (If not, choose 'show more options').  Hover over 'send to' and you should see a list of options. Click on 'Desktop(create shortcut)'. This will put a shortcut on your desktop that you can click on to open the game.  
+Your game is stored on a thumb drive. While the thumbdrive is connected to  your computer, copy and paste the 'Tetris-modular' folder somewhere on your computer. ('Documents' or 'My Documents' would be my recomendation). Open the Tetris-modular folder stored on your computer and right click on the 'tetris.html' icon. (its going to have the same icon as your default browser ie.. chrome, internet explorer)  You should see 'send to' in the list of options. (If not, choose 'show more options').  Hover over 'send to' and you should see a list of options. Click on 'Desktop(create shortcut)'. This will put a shortcut on your desktop that you can click on to open the game.  
 
 Game play :
 The tetris game pieces fall down the gameboard until they reach the bottom where they stick. You can rotate the pieces or move them left or right by clicking on the buttons on the right of the screen. Or you can use the arrow keys on  your keyboard (the up arrow is rotate). 
-You can pause the game with the pause button (pro tip: you can still move the piece when the game is paused). If the piece is too close to the side it will not rotate. Some of your themes have an image covering the game piece. When it sticks to the bottom the image disappears and the shape is it's original color. This is to make it easier to place new shapes. When the entire row is filled it will disappear and you will score points. You get extra points for clearing more than one row at time. If the pieces stack up to the top of the gameboard an theres not enough room for the next piece to fall the game is over.
+You can pause the game with the pause button or the space bar on the keyboard. (pro tip: you can still move the piece when the game is paused). If the piece is too close to the side it will not rotate. In the themes there is an image covering the game piece. When it sticks to the bottom the image disappears and the shape is it's original color. This is to make it easier to place new shapes. When the entire row is filled it will disappear and you will score points. You get extra points for clearing more than one row at time. If the pieces stack up to the top of the gameboard an theres not enough room for the next piece to fall the game is over.
 
 Themes: 
 You may play on any theme that you wish. If you'd like to customize a theme, (I highly encourage you to do so). Here are the instructions.
-1.Make a copy of the tetris custom folder. This will serve as a backup. Do not edit anything in the copied folder. 
-2. inside the 'tetris custom' folder you will see 5 files and two folders. Lets focus on these three files.
+1.Make a copy of the tetris-modular folder. This will serve as a backup. Do not edit anything in the copied folder. 
+2. Inside the 'tetris-modular' folder you will see 5 files and two folders. 
 	files: 
 	1. tetris.css
 	2. tetris.html
@@ -24,7 +24,7 @@ https://www.w3schools.com/html/
 
 tetris.css - css is a type of language that tells the web browser how the HTML elements or tags are to be displayed. It determines the positioning of elements on the page, colors, fonts,sizes and much more. You will not need to edit this file to change your theme. For more information about css look here: https://www.w3schools.com/css/default.asp
 
-tetris.js, shapes.js, profiles.js - These are javascript files. JavaScript is a language that is used to give the page functionality. In general HTML describes the structure of the page, CSS describes the look of the page and JavaScript describes what the page does. These three files work together to create your tetris game. HTML files, CSS files and JS files are used together to make many other webpages. To change your theme you will need to edit the profiles.js file and one other. For a javascipt tutorial go here : https://www.w3schools.com/js/default.asp
+tetris.js, shapes.js, profiles.js - These are javascript files. JavaScript is a language that is used to give the page functionality. In general HTML describes the structure of the page, CSS describes the look of the page and JavaScript describes what the page does. These three types of files work together to create your tetris game. HTML files, CSS files and JS files are used together to make many other webpages. To change your theme you will need to edit the profiles.js file and one other. For a javascipt tutorial go here : https://www.w3schools.com/js/default.asp
 
 	folders:
 	1.images
