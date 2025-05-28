@@ -298,8 +298,7 @@ canvas.addEventListener('touchstart', (e) => {
     startX = touch.pageX; // Store initial touch position
 });
 
-canvas.addEventListener('touchmove', (e) => {
-	e.preventDefault(); 
+canvas.addEventListener('touchmove', (e) => { 
     const touch = e.touches[0];
     let diffX = touch.pageX - startX;
 	
