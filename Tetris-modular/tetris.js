@@ -294,7 +294,6 @@ function collision(x, y, rotatedPiece) {
 
 // Detect swipe 
 canvas.addEventListener('touchstart', (e) => {
-	e.preventDefault(); 
     const touch = e.touches[0];
     startX = touch.pageX; // Store initial touch position
 });
@@ -306,6 +305,7 @@ canvas.addEventListener('touchmove', (e) => {
 	
 	//detect swipe right
     if (Math.abs(diffX) > 50) {
+		e.preventDefault();
         if (diffX > 0) {
             
             moveRight();
