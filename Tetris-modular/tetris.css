@@ -115,6 +115,40 @@ button:active{
   bottom: 0%;
 }
 
+/* Responsive CSS for mobile devices*/
+@media(max-width: 768px){
+	#imageA, #imageB {
+		display: none;
+}
+	body {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+  
+  #main-content {
+    flex-direction: column; /* Stack content vertically */
+  }
 
+  #gameBoard {
+    margin-bottom: 20px; /* Add space below the game board */
+    width: 100%; /* Ensure game board takes full width */
+  }
+  #controls {
+    flex-direction: column; /* Stack controls vertically */
+    align-items: center; /* Center the controls on small screens */
+  }
 
+  button {
+    width: 100%; /* Make buttons full width for easier tapping */
+    margin: 5px 0; /* Reduce margins for mobile */
+  }
 
+  #settings {
+    margin: 10px;
+  }
+  
+  #set-btns {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}

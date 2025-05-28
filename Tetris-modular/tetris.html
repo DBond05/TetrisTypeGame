@@ -14,7 +14,7 @@
 
     <div id="main-content">
         <div id="settings">
-            <div id="set-btns">
+            <div id="set-btns" class="top-mobile">
                 <label for="player" class="player"> Who is playing? </label>
                 <select name="player" id="player" class="selectors" onchange="setTheme(event)">
                     <option data-theme="default" class="theme" value="default"></option>
@@ -58,7 +58,7 @@
             <canvas id="tetris" height="600" width="300"> </canvas>
         </div>
 
-        <div id="controls">
+        <div id="controls" class="btm-mobile">
             <button id="btn-rotate" onclick="rotate()"> Rotate </button>
             <div class="btn-group">
                 <button id="btn-lt" onclick="moveLeft()"> Left </button>

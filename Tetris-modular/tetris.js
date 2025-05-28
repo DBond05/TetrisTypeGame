@@ -24,6 +24,11 @@ let scoreBoard = document.querySelector("h2");
 let canvas = document.querySelector("#tetris");
 let ctx = canvas.getContext("2d");
 
+//mobile settings
+let lastTap = 0;  // Time of last tap for double-tap detection
+let startX = 0;   // Starting X position for swipe detection
+let isDoubleTap = false; // Flag to prevent rotation on double tap
+
 // size of each block
 // 30 x 20 = 600 (height of canvas) 30 x10 = 300 (width of canvas)
 ctx.scale(30, 30);
@@ -39,16 +44,24 @@ let paused = false;
 // repeats new game state redrawing the piece on the canvas
 //sets initial speed of the game 
 let interval = setInterval(newGameState, speed);
+// Updated pause function
 function pause() {
-	if (paused) {
-		interval = setInterval(newGameState, speed);
-		paused = false;
-	} else {
-		clearInterval(interval);
-		paused = true;
-	}
-	
+    if (paused) {
+        interval = setInterval(newGameState, speed);  // Resume the game
+        paused = false;
+    } else {
+        clearInterval(interval);  // Pause the game
+        paused = true;
+    }
 }
+
+// Function to resume the game (called when returning from background)
+function resumeGame() {
+    if (!paused) {
+        interval = setInterval(newGameState, speed);  // Resume the game
+    }
+}
+
 
 function generateRandomPiece() {
 	// random number from 0 to 6
@@ -275,6 +288,53 @@ function collision(x, y, rotatedPiece) {
 	}
 	return false;
 }
+
+// Adding swipe and tap events for mobile interactivity
+
+
+// Detect swipe 
+canvas.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    startX = touch.pageX; // Store initial touch position
+});
+
+canvas.addEventListener('touchmove', (e) => {
+    const touch = e.touches[0];
+    let diffX = touch.pageX - startX;
+	
+	//detect swipe right
+    if (Math.abs(diffX) > 50) {
+        if (diffX > 0) {
+            
+            moveRight();
+        }else{
+		moveLeft();
+		}   
+    
+	startX = touch.pageX; // Reset starting position
+	}
+});
+
+
+// Detect double-tap to pause/unpause the game
+canvas.addEventListener('click', (e) => {
+    const currentTap = new Date().getTime();
+
+    // If time between taps is less than 500ms, it's a double-tap
+    if (currentTap - lastTap < 500) {
+		isDoubleTap = true;
+        pause();  // Toggle pause on double-tap
+    } else { 
+	isDoubleTap = false; 
+		rotate();
+	}
+    lastTap = currentTap;
+});
+
+
+
+
+
 
 
 
